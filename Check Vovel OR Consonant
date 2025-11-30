@@ -1,0 +1,29 @@
+#include <stdio.h>
+char chech(char ch);
+char chech(char ch)
+{
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+    {
+        printf("This is A Vovil:\n");
+    }
+    else
+    {
+        printf("THis is A  Consonent:\n");
+    }
+    return 1;
+}
+int main()
+{
+    char ch;
+    int a = 1;
+    while (a <= 5)
+    {
+
+        printf("Enter Any Character:-");
+        scanf(" %c", &ch);
+        chech(ch);
+    }
+    a++;
+
+    return 0;
+}
